@@ -1,0 +1,354 @@
+/* RESET & BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+.cv-wrapper {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* ACTION BAR / PRZYCISK POBIERZ */
+.action-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+    transition: all 0.2s ease;
+}
+
+.btn-download:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* KONTENER GŁÓWNY */
+.container {
+    background: #ffffff;
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+    overflow: hidden;
+    min-height: 1000px;
+}
+
+/* SIDEBAR (LEWY PANEL) */
+.sidebar {
+    width: 34%;
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 30px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+/* AVATAR */
+.avatar-container {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.avatar-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3b82f6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* SEKCJE SIDEBARU */
+.sidebar-section h2 {
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #60a5fa;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-item .label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    letter-spacing: 0.5px;
+}
+
+.contact-item a, .contact-item span {
+    font-size: 12.5px;
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+/* LISTY W SIDEBARZE */
+.skills-list, .trainings-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skills-list li, .trainings-list li {
+    font-size: 12px;
+    color: #cbd5e1;
+    position: relative;
+    padding-left: 12px;
+    line-height: 1.35;
+}
+
+.skills-list li::before, .trainings-list li::before {
+    content: "•";
+    color: #3b82f6;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* WYKSZTAŁCENIE IN SIDEBAR */
+.edu-item {
+    margin-bottom: 8px;
+}
+
+.edu-degree {
+    display: block;
+    font-weight: 600;
+    font-size: 12.5px;
+    color: #ffffff;
+}
+
+.edu-spec {
+    display: block;
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.edu-school {
+    display: block;
+    font-size: 10.5px;
+    color: #60a5fa;
+    margin-top: 2px;
+}
+
+.sidebar-text {
+    font-size: 11.5px;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+/* PFRON CARD */
+.pfron-card {
+    background-color: #1e293b;
+    border-left: 3px solid #3b82f6;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-top: auto;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.pfron-card strong {
+    display: block;
+    font-size: 10.5px;
+    color: #38bdf8;
+    margin-bottom: 4px;
+}
+
+.pfron-card p {
+    font-size: 10.5px;
+    color: #94a3b8;
+    line-height: 1.3;
+}
+
+/* MAIN CONTENT (PRAWY PANEL) */
+.main-content {
+    width: 66%;
+    padding: 30px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.header h1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #0f172a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+}
+
+.header .subtitle {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #2563eb;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* PROFIL CARD */
+.profile-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2563eb;
+    padding: 12px 14px;
+    border-radius: 0 6px 6px 0;
+    font-size: 12.5px;
+    color: #475569;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+/* DOŚWIADCZENIE ZAWODOWE */
+.main-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0f172a;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 4px;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+}
+
+.exp-card {
+    margin-bottom: 14px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3px;
+}
+
+.exp-role {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.exp-company {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #2563eb;
+}
+
+.exp-date {
+    font-size: 11px;
+    font-weight: 600;
+    color: #64748b;
+    background-color: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.exp-summary {
+    font-size: 12px;
+    color: #475569;
+    margin: 3px 0 5px 0;
+    font-style: italic;
+}
+
+.exp-bullets {
+    padding-left: 16px;
+}
+
+.exp-bullets li {
+    font-size: 12px;
+    color: #334155;
+    margin-bottom: 2px;
+}
+
+/* RODO */
+.rodo-footer {
+    font-size: 9px;
+    color: #94a3b8;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+    margin-top: auto;
+    line-height: 1.3;
+}
+
+/* MAGIA DRUKOWANIA DO PERFECT PDF */
+@page {
+    size: A4 portrait;
+    margin: 0; /* Usuwa nagłówki i stopki przeglądarki (daty, adresy www) */
+}
+
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+        background-color: #ffffff;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .cv-wrapper {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .container {
+        box-shadow: none;
+        border-radius: 0;
+        min-height: 297mm;
+        height: 100%;
+    }
+
+    .sidebar {
+        background-color: #0f172a !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Specjalista ds. Social Media / Marketingu i Komunikacji</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #e9eef3;
+      color: #17212b;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: #fff;
+      display: grid;
+      grid-template-columns: 62mm 1fr;
+    }
+    .sidebar {
+      min-height: 297mm;
+      padding: 14mm 8mm 12mm;
+      background: #153543;
+      color: #f5f8fa;
+    }
+    .sidebar h2 {
+      margin: 0 0 3mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 1px solid rgba(255,255,255,.22);
+      color: #9ed6e6;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .sidebar-section { margin-bottom: 6mm; break-inside: avoid; page-break-inside: avoid; }
+    .contact-list { display: grid; gap: 2.8mm; }
+    .contact-item { display: grid; gap: .6mm; }
+    .contact-item .label { color: #9ed6e6; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+    .contact-item a, .contact-item span:not(.label) { color: #fff; text-decoration: none; font-size: 9.3px; line-height: 1.35; }
+    .skills-list, .trainings-list { margin: 0; padding-left: 4mm; }
+    .skills-list li, .trainings-list li { margin-bottom: 1.8mm; font-size: 8.8px; line-height: 1.35; }
+    .edu-item { display: grid; gap: .6mm; margin-bottom: 3.5mm; }
+    .edu-degree { font-weight: 700; font-size: 9.2px; }
+    .edu-spec, .edu-school { color: #d0dde2; font-size: 8.4px; line-height: 1.3; }
+    .sidebar-text { margin: 0; color: #d8e3e7; font-size: 8.7px; line-height: 1.45; }
+    .pfron-card {
+      margin-top: 5mm;
+      padding: 3mm;
+      border: 1px solid rgba(158,214,230,.45);
+      background: rgba(255,255,255,.06);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .pfron-card strong { display: block; margin-bottom: 1.5mm; color: #9ed6e6; font-size: 8.8px; }
+    .pfron-card p { margin: 0; font-size: 8.2px; line-height: 1.35; }
+    .main-content { padding: 14mm 13mm 10mm; }
+    .header { padding-bottom: 5mm; border-bottom: 2px solid #1a7186; }
+    h1 { margin: 0; color: #132d37; font-size: 28px; line-height: 1.05; letter-spacing: -.025em; }
+    .subtitle { margin: 2mm 0 0; color: #1a7186; font-size: 12px; font-weight: 700; }
+    .profile-card {
+      margin: 5mm 0 6mm;
+      padding: 3.5mm 4mm;
+      border-left: 3px solid #1a7186;
+      background: #f3f7f8;
+    }
+    .profile-card p { margin: 0 0 2mm; color: #3e5058; font-size: 9.7px; line-height: 1.42; }
+    .profile-card p:last-child { margin-bottom: 0; }
+    .main-title {
+      margin: 0 0 4mm;
+      padding-bottom: 1.7mm;
+      border-bottom: 1px solid #d6e1e5;
+      color: #1a7186;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .exp-card { margin-bottom: 4.5mm; break-inside: avoid; page-break-inside: avoid; }
+    .exp-header { display: flex; justify-content: space-between; gap: 7mm; align-items: flex-start; }
+    .exp-role { margin: 0; color: #21343d; font-size: 10.2px; line-height: 1.25; }
+    .exp-company { display: block; margin-top: .6mm; color: #60737c; font-size: 8.9px; font-weight: 600; }
+    .exp-date { flex: 0 0 auto; color: #74828a; font-size: 8.7px; font-weight: 600; white-space: nowrap; }
+    .exp-summary { margin: 2mm 0; color: #4f6068; font-size: 8.9px; line-height: 1.4; }
+    .exp-bullets { margin: 1.8mm 0 0; padding-left: 4.5mm; }
+    .exp-bullets li { margin-bottom: 1.15mm; color: #34464e; font-size: 8.85px; line-height: 1.36; }
+    .rodo-footer { margin-top: 5mm; padding-top: 3mm; border-top: 1px solid #dce4e7; color: #7a858b; font-size: 6.8px; line-height: 1.3; }
+    @media (max-width: 850px) { body { background: #fff; } .page { margin: 0; } }
+    @media print { body { background: #fff; } .page { margin: 0; } }
+  </style>
+</head>
+<body>
+  <main class="page" data-job-title="Specjalista ds. Social Media / Marketingu i Komunikacji">
+    <aside class="sidebar">
+      <section class="sidebar-section">
+        <h2>Kontakt</h2>
+        <div class="contact-list">
+          <div class="contact-item"><span class="label">Telefon</span><a href="tel:+48696778368">696-778-368</a></div>
+          <div class="contact-item"><span class="label">E-mail</span><a href="mailto:tuczynskip@wp.com">tuczynskip@wp.com</a></div>
+          <div class="contact-item"><span class="label">Lokalizacja</span><span>Zielona Góra / Gorzów Wlkp.</span></div>
+        </div>
+      </section>
+
+      <section class="sidebar-section">
+        <h2>Kluczowe Umiejętności</h2>
+        <ul class="skills-list">
+          <li>Media społecznościowe i komunikacja marketingowa marki</li>
+          <li>Planowanie działań promocyjnych i kampanii wspierających sprzedaż</li>
+          <li>Marketing BTL i koordynacja materiałów promocyjnych</li>
+          <li>Organizacja eventów, akcji promocyjnych i sesji zdjęciowych</li>
+          <li>Budowanie spójnego wizerunku marki i komunikacji z odbiorcami</li>
+          <li>Koordynacja współpracy z partnerami, dostawcami i zespołami</li>
+          <li>Raportowanie, zestawienia i MS Office</li>
+          <li>Język angielski B2 • Prawo jazdy kat. B</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h2>Wykształcenie</h2>
+        <div class="edu-item"><span class="edu-degree">Magister Politologii</span><span class="edu-spec">specj. administracja europejska</span><span class="edu-school">Uniwersytet Zielonogórski | 2010–2012</span></div>
+        <div class="edu-item"><span class="edu-degree">Licencjat Administracji</span><span class="edu-spec">specj. administracja europejska</span><span class="edu-school">PWSZ w Gorzowie Wlkp. | 2007–2010</span></div>
+      </section>
+
+      <section class="sidebar-section">
+        <h2>Obszary Marketingowe</h2>
+        <ul class="trainings-list">
+          <li>Komunikacja marek usługowych</li>
+          <li>Promocja i działania wizerunkowe</li>
+          <li>Materiały POS i BTL</li>
+          <li>Event marketing</li>
+          <li>Sesje zdjęciowe i komunikacja wizualna</li>
+          <li>Wsparcie sprzedaży działaniami marketingowymi</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h2>Profil</h2>
+        <p class="sidebar-text">Doświadczenie łączące marketing, promocję, media społecznościowe, obsługę klienta i zarządzanie markami usługowymi. Praktyka w koordynacji działań promocyjnych dla własnych marek oraz sieci punktów sprzedaży.</p>
+      </section>
+
+      <div class="pfron-card"><strong>Informacja dla Pracodawcy (PFRON)</strong><p>Posiadam orzeczenie o niepełnosprawności w stopniu umiarkowanym. Zatrudnienie może wiązać się z możliwością skorzystania przez pracodawcę z odpowiednich ulg lub form wsparcia zgodnie z obowiązującymi przepisami i sytuacją firmy.</p></div>
+    </aside>
+
+    <section class="main-content">
+      <header class="header">
+        <h1>Paweł Tuczyński</h1>
+        <p class="subtitle">Specjalista ds. Social Media | Marketing | Komunikacja Marki</p>
+      </header>
+
+      <section class="profile-card">
+        <p><strong>Specjalista marketingu i komunikacji z praktycznym doświadczeniem w prowadzeniu komunikacji marek usługowych oraz działaniach promocyjnych.</strong> Łączę doświadczenie w zarządzaniu mediami społecznościowymi marki, marketingu BTL, organizacji eventów i sesji zdjęciowych oraz koordynacji materiałów promocyjnych.</p>
+        <p>Przez ponad sześć lat współtworzyłem i rozwijałem własne marki usługowe, odpowiadając również za ich komunikację marketingową i działania wizerunkowe. Wcześniej pracowałem w marketingu dla sieci 30 punktów dystrybucyjnych. Dobrze rozumiem potrzeby odbiorców, potrafię organizować działania od pomysłu do realizacji i sprawnie współpracuję z zespołami oraz partnerami zewnętrznymi.</p>
+      </section>
+
+      <section class="experience-section">
+        <h2 class="main-title">Doświadczenie Zawodowe</h2>
+
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Właściciel / Manager dwóch marek usługowych</h3><span class="exp-company">Barbatus Barbershop | Fancy Studio Urody</span></div><span class="exp-date">11.2018 – 01.2025</span></div>
+          <p class="exp-summary">Tworzenie, rozwój i operacyjne prowadzenie dwóch marek usługowych wraz z odpowiedzialnością za komunikację marketingową, promocję i działania wizerunkowe.</p>
+          <ul class="exp-bullets">
+            <li>Zarządzanie komunikacją marketingową i mediami społecznościowymi obu marek,</li>
+            <li>Planowanie i realizacja działań promocyjnych wspierających rozpoznawalność marki i sprzedaż usług,</li>
+            <li>Organizacja wydarzeń promocyjnych, sesji zdjęciowych oraz obecności marek podczas eventów zewnętrznych,</li>
+            <li>Koordynacja współpracy z dostawcami i partnerami oraz dbałość o spójność komunikacji z klientami,</li>
+            <li>Budowanie zespołu, wdrażanie pracowników i nadzór nad standardem obsługi oraz wizerunkiem punktów.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Zastępca kierownika salonu</h3><span class="exp-company">Komfort Łazienki</span></div><span class="exp-date">11.2017 – 11.2018</span></div>
+          <ul class="exp-bullets">
+            <li>Aktywna komunikacja z klientami indywidualnymi, projektantami i inwestorami oraz prezentowanie rozwiązań produktowych,</li>
+            <li>Dbanie o standard ekspozycji i spójny sposób prezentowania oferty w salonie,</li>
+            <li>Raportowanie, współpraca w 6-osobowym zespole i koordynacja bieżących działań sprzedażowych.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Specjalista ds. weryfikacji kontraktów / Merchandiser</h3><span class="exp-company">JTI (Japan Tobacco International)</span></div><span class="exp-date">11.2016 – 11.2017</span></div>
+          <ul class="exp-bullets">
+            <li>Wspieranie partnerów handlowych w zakresie nowych produktów, promocji i obowiązujących standardów komunikacji,</li>
+            <li>Nadzór nad materiałami promocyjnymi w punktach sprzedaży oraz weryfikacja zgodności ekspozycji i kontraktów,</li>
+            <li>Codzienna współpraca z partnerami B2B, raportowanie i obsługa aplikacji TME.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Koordynator ds. wsparcia operacyjnego i marketingu</h3><span class="exp-company">Forte Nowoczesne Protezowanie</span></div><span class="exp-date">03.2015 – 10.2016</span></div>
+          <ul class="exp-bullets">
+            <li>Koordynacja działań promocyjnych BTL dla sieci 30 punktów dystrybucyjnych w całej Polsce,</li>
+            <li>Organizacja i dystrybucja materiałów promocyjnych oraz edukacyjnych dla placówek,</li>
+            <li>Wsparcie przy otwieraniu nowych punktów, organizacja szkoleń oraz przygotowywanie zestawień i raportów w MS Excel.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Manager / Kierownik</h3><span class="exp-company">Salony Stylu</span></div><span class="exp-date">06.2010 – 02.2015</span></div>
+          <ul class="exp-bullets">
+            <li>Planowanie działań sprzedażowo-marketingowych i organizacja eventów wspierających wizerunek firmy,</li>
+            <li>Koordynacja pracy ponad 20-osobowego zespołu oraz reprezentowanie firmy wobec klientów i kontrahentów,</li>
+            <li>Nadzór nad standardami obsługi, dokumentacją, rozliczeniami i współpracą z dostawcami.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="rodo-footer">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).</footer>
+    </section>
+  </main>
+</body>
+</html>

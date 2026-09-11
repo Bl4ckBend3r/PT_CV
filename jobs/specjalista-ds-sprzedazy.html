@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Specjalista ds. Sprzedaży / Account Manager</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #e9eef3;
+      color: #17212b;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: #fff;
+      display: grid;
+      grid-template-columns: 62mm 1fr;
+    }
+    .sidebar {
+      min-height: 297mm;
+      padding: 14mm 8mm 12mm;
+      background: #153543;
+      color: #f5f8fa;
+    }
+    .sidebar h2 {
+      margin: 0 0 3mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 1px solid rgba(255,255,255,.22);
+      color: #9ed6e6;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .sidebar-section { margin-bottom: 6mm; break-inside: avoid; page-break-inside: avoid; }
+    .contact-list { display: grid; gap: 2.8mm; }
+    .contact-item { display: grid; gap: .6mm; }
+    .contact-item .label { color: #9ed6e6; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+    .contact-item a, .contact-item span:not(.label) { color: #fff; text-decoration: none; font-size: 9.3px; line-height: 1.35; }
+    .skills-list, .trainings-list { margin: 0; padding-left: 4mm; }
+    .skills-list li, .trainings-list li { margin-bottom: 1.8mm; font-size: 8.8px; line-height: 1.35; }
+    .edu-item { display: grid; gap: .6mm; margin-bottom: 3.5mm; }
+    .edu-degree { font-weight: 700; font-size: 9.2px; }
+    .edu-spec, .edu-school { color: #d0dde2; font-size: 8.4px; line-height: 1.3; }
+    .sidebar-text { margin: 0; color: #d8e3e7; font-size: 8.7px; line-height: 1.45; }
+    .pfron-card {
+      margin-top: 5mm;
+      padding: 3mm;
+      border: 1px solid rgba(158,214,230,.45);
+      background: rgba(255,255,255,.06);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .pfron-card strong { display: block; margin-bottom: 1.5mm; color: #9ed6e6; font-size: 8.8px; }
+    .pfron-card p { margin: 0; font-size: 8.2px; line-height: 1.35; }
+    .main-content { padding: 14mm 13mm 10mm; }
+    .header { padding-bottom: 5mm; border-bottom: 2px solid #1a7186; }
+    h1 { margin: 0; color: #132d37; font-size: 28px; line-height: 1.05; letter-spacing: -.025em; }
+    .subtitle { margin: 2mm 0 0; color: #1a7186; font-size: 12px; font-weight: 700; }
+    .profile-card {
+      margin: 5mm 0 6mm;
+      padding: 3.5mm 4mm;
+      border-left: 3px solid #1a7186;
+      background: #f3f7f8;
+    }
+    .profile-card p { margin: 0 0 2mm; color: #3e5058; font-size: 9.7px; line-height: 1.42; }
+    .profile-card p:last-child { margin-bottom: 0; }
+    .main-title {
+      margin: 0 0 4mm;
+      padding-bottom: 1.7mm;
+      border-bottom: 1px solid #d6e1e5;
+      color: #1a7186;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .exp-card { margin-bottom: 4.8mm; break-inside: avoid; page-break-inside: avoid; }
+    .exp-header { display: flex; justify-content: space-between; gap: 7mm; align-items: flex-start; }
+    .exp-role { margin: 0; color: #21343d; font-size: 10.2px; line-height: 1.25; }
+    .exp-company { display: block; margin-top: .6mm; color: #60737c; font-size: 8.9px; font-weight: 600; }
+    .exp-date { flex: 0 0 auto; color: #74828a; font-size: 8.7px; font-weight: 600; white-space: nowrap; }
+    .exp-summary { margin: 2mm 0; color: #4f6068; font-size: 8.9px; line-height: 1.4; }
+    .exp-bullets { margin: 1.8mm 0 0; padding-left: 4.5mm; }
+    .exp-bullets li { margin-bottom: 1.2mm; color: #34464e; font-size: 8.9px; line-height: 1.38; }
+    .rodo-footer { margin-top: 5mm; padding-top: 3mm; border-top: 1px solid #dce4e7; color: #7a858b; font-size: 6.8px; line-height: 1.3; }
+    @media (max-width: 850px) { body { background: #fff; } .page { margin: 0; } }
+    @media print { body { background: #fff; } .page { margin: 0; } }
+  </style>
+</head>
+<body>
+  <main class="page" data-job-title="Specjalista ds. Sprzedaży / Account Manager">
+    <aside class="sidebar">
+      <section class="sidebar-section">
+        <h2>Kontakt</h2>
+        <div class="contact-list">
+          <div class="contact-item"><span class="label">Telefon</span><a href="tel:+48696778368">696-778-368</a></div>
+          <div class="contact-item"><span class="label">E-mail</span><a href="mailto:tuczynskip@wp.com">tuczynskip@wp.com</a></div>
+          <div class="contact-item"><span class="label">Lokalizacja</span><span>Zielona Góra / Gorzów Wlkp.</span></div>
+        </div>
+      </section>
+
+      <section class="sidebar-section">
+        <h2>Kluczowe Umiejętności</h2>
+        <ul class="skills-list">
+          <li>Sprzedaż doradcza i obsługa klienta B2B / B2C</li>
+          <li>Budowanie i rozwijanie długofalowych relacji z klientami</li>
+          <li>Negocjowanie warunków handlowych i współpraca z kontrahentami</li>
+          <li>Analiza potrzeb klienta i dobór rozwiązań</li>
+          <li>Realizacja celów sprzedażowych, raportowanie i dokumentacja</li>
+          <li>Systemy CRM, TME, iHurt oraz MS Office</li>
+          <li>Koordynacja zamówień, reklamacji i procesów operacyjnych</li>
+          <li>Język angielski B2 • Prawo jazdy kat. B</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h2>Wykształcenie</h2>
+        <div class="edu-item"><span class="edu-degree">Magister Politologii</span><span class="edu-spec">specj. administracja europejska</span><span class="edu-school">Uniwersytet Zielonogórski | 2010–2012</span></div>
+        <div class="edu-item"><span class="edu-degree">Licencjat Administracji</span><span class="edu-spec">specj. administracja europejska</span><span class="edu-school">PWSZ w Gorzowie Wlkp. | 2007–2010</span></div>
+      </section>
+
+      <section class="sidebar-section">
+        <h2>Przebyte Szkolenia</h2>
+        <ul class="trainings-list">
+          <li>Zarządzanie pracą zespołu</li>
+          <li>Obsługa klienta 60+</li>
+          <li>Defensive Driving (Bezpieczeństwo drogowe)</li>
+          <li>Efektywna edukacja detalisty w sprzedaży</li>
+          <li>Kurs pedagogiczny dla instruktorów praktycznej nauki zawodu</li>
+          <li>Kurs udzielania pierwszej pomocy (certyfikat)</li>
+          <li>Aktualna książeczka sanitarno-epidemiologiczna</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h2>Profil sprzedażowy</h2>
+        <p class="sidebar-text">Doświadczenie w bezpośrednim kontakcie z klientami, sprzedaży doradczej, relacjach B2B/B2C, weryfikacji kontraktów, negocjacjach z dostawcami oraz koordynacji działań wspierających sprzedaż.</p>
+      </section>
+
+      <div class="pfron-card"><strong>Informacja dla Pracodawcy (PFRON)</strong><p>Posiadam orzeczenie o niepełnosprawności w stopniu umiarkowanym. Zatrudnienie może wiązać się z możliwością skorzystania przez pracodawcę z odpowiednich ulg lub form wsparcia zgodnie z obowiązującymi przepisami i sytuacją firmy.</p></div>
+    </aside>
+
+    <section class="main-content">
+      <header class="header">
+        <h1>Paweł Tuczyński</h1>
+        <p class="subtitle">Specjalista ds. Sprzedaży | B2B / B2C | Account Management</p>
+      </header>
+
+      <section class="profile-card">
+        <p><strong>Specjalista sprzedaży i obsługi klienta z wieloletnim doświadczeniem w relacjach B2B i B2C.</strong> Łączę praktykę w sprzedaży doradczej, negocjacjach handlowych, realizacji celów sprzedażowych, weryfikacji kontraktów oraz współpracy z klientami, dostawcami i partnerami biznesowymi.</p>
+        <p>Jestem samodzielny, dobrze zorganizowany i nastawiony na długofalową współpracę. Sprawnie rozpoznaję potrzeby klienta, koordynuję kolejne etapy obsługi i dbam o terminowe domykanie spraw. Pracuję w systemach CRM, TME i iHurt oraz w pakiecie MS Office; język angielski – B2.</p>
+      </section>
+
+      <section class="experience-section">
+        <h2 class="main-title">Doświadczenie Zawodowe</h2>
+
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Właściciel dwóch salonów fryzjerskich</h3><span class="exp-company">Barbatus Barbershop | Fancy Studio Urody</span></div><span class="exp-date">11.2018 – 01.2025</span></div>
+          <p class="exp-summary">Samodzielne stworzenie i rozwój dwóch punktów usługowych, z odpowiedzialnością za sprzedaż, obsługę klientów, dostawców, budżet oraz codzienną organizację działalności.</p>
+          <ul class="exp-bullets">
+            <li>Budowanie długofalowych relacji z klientami i dbanie o wysoki standard obsługi w dwóch lokalizacjach,</li>
+            <li>Rozwijanie oferty usługowej oraz prowadzenie działań promocyjnych wspierających sprzedaż i rozpoznawalność marki,</li>
+            <li>Negocjowanie warunków handlowych z dostawcami, weryfikacja faktur i koordynacja bieżącej współpracy,</li>
+            <li>Rozwiązywanie reklamacji i niestandardowych sytuacji z naciskiem na utrzymanie relacji z klientem,</li>
+            <li>Rekrutacja, organizacja pracy, rozliczenia i szkolenia zespołu.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Zastępca kierownika salonu</h3><span class="exp-company">Komfort Łazienki</span></div><span class="exp-date">11.2017 – 11.2018</span></div>
+          <p class="exp-summary">Współodpowiedzialność za sprzedaż, obsługę klientów i organizację pracy 6-osobowego zespołu w salonie wyposażenia wnętrz.</p>
+          <ul class="exp-bullets">
+            <li>Aktywna sprzedaż doradcza oraz dobór rozwiązań dla klientów indywidualnych, architektów i inwestorów,</li>
+            <li>Budowanie relacji z klientami B2C oraz partnerami biznesowymi, w tym projektantami i deweloperami,</li>
+            <li>Realizacja celów sprzedażowych, raportowanie wyników i praca w systemie iHurt,</li>
+            <li>Koordynacja realizacji zamówień, dokumentów sprzedażowych i zgłoszeń reklamacyjnych.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Specjalista ds. weryfikacji kontraktów / Merchandiser</h3><span class="exp-company">JTI (Japan Tobacco International)</span></div><span class="exp-date">11.2016 – 11.2017</span></div>
+          <ul class="exp-bullets">
+            <li>Codzienny kontakt z partnerami handlowymi B2B, rozpoznawanie potrzeb i rozwijanie długofalowej współpracy,</li>
+            <li>Weryfikacja kontraktów handlowych oraz zgodności warunków współpracy ze standardami firmy,</li>
+            <li>Wsparcie partnerów w zakresie produktów, promocji i procedur oraz przekazywanie zgłoszeń do odpowiednich zespołów,</li>
+            <li>Planowanie pracy w terenie, raportowanie i obsługa aplikacji TME.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Koordynator ds. wsparcia operacyjnego i marketingu</h3><span class="exp-company">Forte Nowoczesne Protezowanie</span></div><span class="exp-date">03.2015 – 10.2016</span></div>
+          <ul class="exp-bullets">
+            <li>Bieżąca współpraca i wsparcie operacyjne sieci 30 punktów dystrybucyjnych w całej Polsce,</li>
+            <li>Koordynacja materiałów promocyjnych i edukacyjnych oraz obsługa zgłoszeń z placówek,</li>
+            <li>Tworzenie zestawień i raportów w MS Excel oraz organizacja szkoleń dla personelu.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Manager / Kierownik</h3><span class="exp-company">Salony Stylu</span></div><span class="exp-date">06.2010 – 02.2015</span></div>
+          <ul class="exp-bullets">
+            <li>Nadzór nad standardami obsługi klienta oraz koordynacja pracy ponad 20-osobowego zespołu,</li>
+            <li>Planowanie działań sprzedażowo-marketingowych i reprezentowanie firmy wobec kontrahentów,</li>
+            <li>Współpraca z dostawcami, obsługa umów i dokumentów oraz bieżące rozliczenia.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="rodo-footer">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).</footer>
+    </section>
+  </main>
+</body>
+</html>

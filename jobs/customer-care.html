@@ -3,173 +3,264 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Paweł Tuczyński</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Specjalista ds. Obsługi Klienta / Customer Support / Help Desk</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #e9eef3;
+      color: #17212b;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 14mm 15mm 12mm;
+      background: #fff;
+    }
+    header {
+      padding-bottom: 7mm;
+      border-bottom: 2px solid #0f5f73;
+    }
+    h1 {
+      margin: 0;
+      font-size: 29px;
+      line-height: 1.05;
+      letter-spacing: -.025em;
+      color: #10242b;
+    }
+    .target-role {
+      margin-top: 4px;
+      color: #0f5f73;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px 14px;
+      margin-top: 9px;
+      color: #52616b;
+      font-size: 10.5px;
+    }
+    .contact-item { white-space: nowrap; }
+    section { margin-top: 6mm; }
+    h2 {
+      margin: 0 0 3mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 1px solid #d8e2e8;
+      color: #0f5f73;
+      font-size: 12px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    p, li, span { font-size: 10.2px; line-height: 1.42; }
+    .summary-text { margin: 0; text-align: justify; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3mm 7mm;
+    }
+    .skill-category {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .skill-category strong {
+      display: block;
+      margin-bottom: 1px;
+      color: #243640;
+      font-size: 10px;
+    }
+    .skill-category span { color: #3f4f59; }
+    .experience-item {
+      margin-bottom: 4mm;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8mm;
+      margin-bottom: 1.5mm;
+    }
+    .job-title {
+      color: #172b34;
+      font-weight: 700;
+      font-size: 10.4px;
+    }
+    .company-name { color: #58717d; font-weight: 600; }
+    .dates {
+      flex: 0 0 auto;
+      color: #6c7a83;
+      font-size: 9.6px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .responsibilities {
+      margin: 0;
+      padding-left: 4.5mm;
+    }
+    .responsibilities li { margin: 0 0 1.1mm; }
+    .education-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 8mm;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .education-title { font-weight: 700; color: #263942; }
+    .education-school { color: #586972; }
+    .inline-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2mm;
+    }
+    .badge {
+      padding: 1.1mm 2.2mm;
+      border: 1px solid #d6e4e9;
+      border-radius: 999px;
+      background: #f5f9fa;
+      color: #314852;
+      font-size: 9.3px;
+    }
+    .pfron-box {
+      margin-top: 3mm;
+      padding: 3mm 3.5mm;
+      border-left: 3px solid #0f5f73;
+      background: #f2f7f8;
+      color: #33474f;
+      font-size: 9.4px;
+      line-height: 1.35;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .consent-clause {
+      margin-top: 5mm;
+      padding-top: 3mm;
+      border-top: 1px solid #dce4e8;
+      color: #7b878e;
+      font-size: 7.8px;
+      line-height: 1.3;
+    }
+    @media (max-width: 850px) {
+      body { background: #fff; }
+      .page { width: 210mm; margin: 0; }
+    }
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; box-shadow: none; }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Przycisk do pobierania PDF (widoczny tylko na ekranie, ukryty na wydruku) -->
-  <div class="download-toolbar">
-    <button class="btn-download" onclick="window.print()">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-        <polyline points="7 10 12 15 17 10"></polyline>
-        <line x1="12" y1="15" x2="12" y2="3"></line>
-      </svg>
-      Pobierz jako PDF
-    </button>
-  </div>
-
-  <header>
-    <h1>Paweł Tuczyński</h1>
-    <div class="target-role">Specjalista ds. Obsługi Klienta / Customer Support / Help Desk</div>
-    <div class="contact-info">
-      <span class="contact-item">Miejscowość: Zielona Góra</span>
-      <span class="contact-item">Telefon: +48 696 778 368</span>
-      <span class="contact-item">E-mail: tuczynskip@wp.com</span>
-    </div>
-  </header>
-
-  <section class="section-block">
-    <h2>Podsumowanie zawodowe</h2>
-    <p class="summary-text">
-      Specjalista ds. obsługi klienta i wsparcia operacyjnego z wieloletnim doświadczeniem w bezpośrednim kontakcie z klientem biznesowym i indywidualnym, a także w środowisku korporacyjnym. Skutecznie diagnozuję potrzeby użytkowników, rozwiązuję bieżące problemy i reklamacje oraz dbam o jasną, profesjonalną komunikację. Posiadam praktyczną znajomość systemów klasy CRM, aplikacji handlowych i pakietu MS Office. W pracy na pierwszej linii wsparcia stawiam na opanowanie, terminowe domykanie spraw i sprawne przekazywanie złożonych zagadnień do właściwych zespołów.
-    </p>
-  </section>
-
-  <section class="section-block">
-    <h2>Kluczowe umiejętności</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <strong>Obsługa klienta i wsparcie użytkowników:</strong>
-        <span>Profesjonalny kontakt wielokanałowy (telefon, e-mail), identyfikacja problemów i deeskalacja trudnych sytuacji, zarządzanie reklamacjami, standardy Customer Care.</span>
+  <main class="page" data-job-title="Specjalista ds. Obsługi Klienta / Customer Support / Help Desk">
+    <header>
+      <h1>Paweł Tuczyński</h1>
+      <div class="target-role">Specjalista ds. Obsługi Klienta / Customer Support / Help Desk</div>
+      <div class="contact-info">
+        <span class="contact-item">Miejscowość: Zielona Góra</span>
+        <span class="contact-item">Telefon: +48 696 778 368</span>
+        <span class="contact-item">E-mail: tuczynskip@wp.com</span>
       </div>
-      <div class="skill-category">
-        <strong>Systemy i narzędzia informatyczne:</strong>
-        <span>Systemy CRM, oprogramowanie magazynowo-handlowe (iHurt), dedykowane aplikacje mobilne (TME), pakiet Microsoft Office (Word, Excel, Outlook, PowerPoint).</span>
+    </header>
+
+    <section>
+      <h2>Podsumowanie zawodowe</h2>
+      <p class="summary-text">Specjalista ds. obsługi klienta i wsparcia operacyjnego z wieloletnim doświadczeniem w bezpośrednim kontakcie z klientem biznesowym i indywidualnym, a także w środowisku korporacyjnym. Skutecznie diagnozuję potrzeby użytkowników, rozwiązuję bieżące problemy i reklamacje oraz dbam o jasną, profesjonalną komunikację. Posiadam praktyczną znajomość systemów klasy CRM, aplikacji handlowych i pakietu MS Office. W pracy na pierwszej linii wsparcia stawiam na opanowanie, terminowe domykanie spraw i sprawne przekazywanie złożonych zagadnień do właściwych zespołów.</p>
+    </section>
+
+    <section>
+      <h2>Kluczowe umiejętności</h2>
+      <div class="skills-grid">
+        <div class="skill-category"><strong>Obsługa klienta i wsparcie użytkowników:</strong><span>Profesjonalny kontakt wielokanałowy (telefon, e-mail), identyfikacja problemów i deeskalacja trudnych sytuacji, zarządzanie reklamacjami, standardy Customer Care.</span></div>
+        <div class="skill-category"><strong>Systemy i narzędzia informatyczne:</strong><span>Systemy CRM, oprogramowanie magazynowo-handlowe (iHurt), dedykowane aplikacje mobilne (TME), pakiet Microsoft Office (Word, Excel, Outlook, PowerPoint).</span></div>
+        <div class="skill-category"><strong>Kompetencje operacyjne i proceduralne:</strong><span>Rejestrowanie i dokumentowanie zgłoszeń, weryfikacja poprawności umów i dokumentów, raportowanie statusów, przekazywanie spraw technicznych.</span></div>
+        <div class="skill-category"><strong>Komunikacja i języki:</strong><span>Przekazywanie złożonych informacji prostym językiem, prowadzenie szkoleń i wdrożeń stanowiskowych, język angielski: B2.</span></div>
       </div>
-      <div class="skill-category">
-        <strong>Kompetencje operacyjne i proceduralne:</strong>
-        <span>Rejestrowanie i dokumentowanie zgłoszeń, weryfikacja poprawności umów i dokumentów, raportowanie statusów, przekazywanie spraw technicznych.</span>
+    </section>
+
+    <section>
+      <h2>Doświadczenie zawodowe</h2>
+      <div class="experience-item">
+        <div class="item-header"><span class="job-title">Kierownik operacyjny / Właściciel działalności <span class="company-name">| Barbatus Barbershop, Fancy Studio Urody</span></span><span class="dates">11.2018 – 01.2025</span></div>
+        <ul class="responsibilities">
+          <li>Kompleksowa, bezpośrednia i telefoniczna obsługa klientów oraz nadzór nad utrzymaniem najwyższych standardów Customer Care w dwóch lokalizacjach.</li>
+          <li>Bieżące przyjmowanie i rozwiązywanie niestandardowych problemów oraz reklamacji, z dbałością o utrzymanie długofalowych, pozytywnych relacji.</li>
+          <li>Koordynacja zgłoszeń, organizacja harmonogramów pracy zespołu, rozliczanie usług oraz prowadzenie wdrożeń i szkoleń dla nowych pracowników.</li>
+          <li>Współpraca z dostawcami i serwisem technicznym – negocjacje warunków handlowych, eskalacja problemów z dostawami i weryfikacja faktur.</li>
+        </ul>
       </div>
-      <div class="skill-category">
-        <strong>Komunikacja i języki:</strong>
-        <span>Przekazywanie złożonych informacji prostym językiem, prowadzenie szkoleń i wdrożeń stanowiskowych, język angielski: B2.</span>
+
+      <div class="experience-item">
+        <div class="item-header"><span class="job-title">Zastępca kierownika salonu <span class="company-name">| Komfort Łazienki</span></span><span class="dates">11.2017 – 11.2018</span></div>
+        <ul class="responsibilities">
+          <li>Aktywne wsparcie i doradztwo dla klientów indywidualnych, architektów oraz inwestorów w doborze rozwiązań produktowych.</li>
+          <li>Prowadzenie bieżącej ewidencji sprzedaży i stanów magazynowych w systemie iHurt, generowanie raportów oraz wystawianie dokumentów sprzedażowych.</li>
+          <li>Weryfikacja jakości realizacji zamówień, przyjmowanie zgłoszeń reklamacyjnych i koordynacja ich obsługi z działami logistyki i centrali.</li>
+          <li>Organizowanie pracy 6-osobowego zespołu sprzedażowego oraz dbanie o spójny przepływ informacji w zespole.</li>
+        </ul>
       </div>
-    </div>
-  </section>
 
-  <section>
-    <h2>Doświadczenie zawodowe</h2>
-
-    <div class="experience-item">
-      <div class="item-header">
-        <span class="job-title">Kierownik operacyjny / Właściciel działalności <span class="company-name">| Barbatus Barbershop, Fancy Studio Urody</span></span>
-        <span class="dates">11.2018 – 01.2025</span>
+      <div class="experience-item">
+        <div class="item-header"><span class="job-title">Specjalista ds. weryfikacji kontraktów / Merchandiser <span class="company-name">| JTI (Japan Tobacco International)</span></span><span class="dates">11.2016 – 11.2017</span></div>
+        <ul class="responsibilities">
+          <li>Codzienny kontakt z partnerami handlowymi B2B, badanie potrzeb oraz bieżące wsparcie w kwestiach formalnych i technicznych.</li>
+          <li>Weryfikacja poprawności i zgodności warunków kontraktów handlowych ze standardami korporacyjnymi przy użyciu aplikacji mobilnej TME.</li>
+          <li>Przekazywanie zgłoszeń problemowych od detalistów do odpowiednich jednostek regionalnych i monitorowanie statusu ich rozwiązania.</li>
+          <li>Edukacja partnerów w zakresie wprowadzania nowych produktów, promocji oraz obowiązujących procedur operacyjnych.</li>
+        </ul>
       </div>
-      <ul class="responsibilities">
-        <li>Kompleksowa, bezpośrednia i telefoniczna obsługa klientów oraz nadzór nad utrzymaniem najwyższych standardów Customer Care w dwóch lokalizacjach.</li>
-        <li>Bieżące przyjmowanie i rozwiązywanie niestandardowych problemów oraz reklamacji, z dbałością o utrzymanie długofalowych, pozytywnych relacji.</li>
-        <li>Koordynacja zgłoszeń, organizacja harmonogramów pracy zespołu, rozliczanie usług oraz prowadzenie wdrożeń i szkoleń dla nowych pracowników.</li>
-        <li>Współpraca z dostawcami i serwisem technicznym – negocjacje warunków handlowych, eskalacja problemów z dostawami i weryfikacja faktur.</li>
-      </ul>
-    </div>
 
-    <div class="experience-item">
-      <div class="item-header">
-        <span class="job-title">Zastępca kierownika salonu <span class="company-name">| Komfort Łazienki</span></span>
-        <span class="dates">11.2017 – 11.2018</span>
+      <div class="experience-item">
+        <div class="item-header"><span class="job-title">Koordynator ds. wsparcia operacyjnego i marketingu <span class="company-name">| Forte Nowoczesne Protezowanie</span></span><span class="dates">03.2015 – 10.2016</span></div>
+        <ul class="responsibilities">
+          <li>Zapewnianie bieżącego wsparcia operacyjnego dla sieci 30 punktów dystrybucyjnych w całej Polsce (I linia kontaktu).</li>
+          <li>Koordynacja logistyki materiałów promocyjnych i edukacyjnych, obsługa zgłoszeń zapotrzebowania z placówek.</li>
+          <li>Prowadzenie inwentaryzacji, tworzenie zestawień w MS Excel oraz organizacja szkoleń wprowadzających dla personelu.</li>
+        </ul>
       </div>
-      <ul class="responsibilities">
-        <li>Aktywne wsparcie i doradztwo dla klientów indywidualnych, architektów oraz inwestorów w doborze rozwiązań produktowych.</li>
-        <li>Prowadzenie bieżącej ewidencji sprzedaży i stanów magazynowych w systemie iHurt, generowanie raportów oraz wystawianie dokumentów sprzedażowych.</li>
-        <li>Weryfikacja jakości realizacji zamówień, przyjmowanie zgłoszeń reklamacyjnych i koordynacja ich obsługi z działami logistyki i centrali.</li>
-        <li>Organizowanie pracy 6-osobowego zespołu sprzedażowego oraz dbanie o spójny przepływ informacji w zespole.</li>
-      </ul>
-    </div>
 
-    <div class="experience-item">
-      <div class="item-header">
-        <span class="job-title">Specjalista ds. weryfikacji kontraktów / Merchandiser <span class="company-name">| JTI (Japan Tobacco International)</span></span>
-        <span class="dates">11.2016 – 11.2017</span>
+      <div class="experience-item">
+        <div class="item-header"><span class="job-title">Manager / Kierownik operacyjny <span class="company-name">| Salony Stylu</span></span><span class="dates">06.2010 – 02.2015</span></div>
+        <ul class="responsibilities">
+          <li>Koordynacja sprawnego funkcjonowania placówek, zarządzanie pracą ponad 20-osobowego personelu oraz reprezentowanie firmy przed kontrahentami.</li>
+          <li>Obsługa kluczowych spraw klienckich, nadzór nad standardami obsługi oraz procedurami reklamacyjnymi.</li>
+          <li>Prowadzenie bieżącej sprawozdawczości, inwentaryzacji oraz nadzór nad prawidłowym obiegiem dokumentów i umów.</li>
+        </ul>
       </div>
-      <ul class="responsibilities">
-        <li>Codzienny kontakt z partnerami handlowymi B2B, badanie potrzeb oraz bieżące wsparcie w kwestiach formalnych i technicznych.</li>
-        <li>Weryfikacja poprawności i zgodności warunków kontraktów handlowych ze standardami korporacyjnymi przy użyciu aplikacji mobilnej TME.</li>
-        <li>Przekazywanie zgłoszeń problemowych od detalistów do odpowiednich jednostek regionalnych i monitorowanie statusu ich rozwiązania.</li>
-        <li>Edukacja partnerów w zakresie wprowadzania nowych produktów, promocji oraz obowiązujących procedur operacyjnych.</li>
-      </ul>
-    </div>
+    </section>
 
-    <div class="experience-item">
-      <div class="item-header">
-        <span class="job-title">Koordynator ds. wsparcia operacyjnego i marketingu <span class="company-name">| Forte Nowoczesne Protezowanie</span></span>
-        <span class="dates">03.2015 – 10.2016</span>
+    <section>
+      <h2>Wykształcenie</h2>
+      <div class="education-item"><div><span class="education-title">Magister: Politologia (specjalizacja: Administracja Europejska)</span><br><span class="education-school">Uniwersytet Zielonogórski</span></div><span class="dates">2010 – 2012</span></div>
+      <div class="education-item" style="margin-top: 2.5mm;"><div><span class="education-title">Licencjat: Administracja (specjalizacja: Administracja Europejska)</span><br><span class="education-school">Państwowa Wyższa Szkoła Zawodowa w Gorzowie Wielkopolskim</span></div><span class="dates">2007 – 2010</span></div>
+    </section>
+
+    <section>
+      <h2>Szkolenia i Certyfikaty</h2>
+      <div class="inline-badges">
+        <span class="badge">Zarządzanie pracą zespołu</span>
+        <span class="badge">Obsługa klienta 60+</span>
+        <span class="badge">Efektywna edukacja partnera w procesie sprzedaży</span>
+        <span class="badge">Kurs pedagogiczny dla instruktorów praktycznej nauki zawodu</span>
+        <span class="badge">Udzielanie pierwszej pomocy (certyfikat)</span>
+        <span class="badge">Program bezpieczeństwa drogowego – Defensive Driving</span>
       </div>
-      <ul class="responsibilities">
-        <li>Zapewnianie bieżącego wsparcia operacyjnego dla sieci 30 punktów dystrybucyjnych w całej Polsce (I linia kontaktu).</li>
-        <li>Koordynacja logistyki materiałów promocyjnych i edukacyjnych, obsługa zgłoszeń zapotrzebowania z placówek.</li>
-        <li>Prowadzenie inwentaryzacji, tworzenie zestawień w MS Excel oraz organizacja szkoleń wprowadzających dla personelu.</li>
-      </ul>
-    </div>
+    </section>
 
-    <div class="experience-item">
-      <div class="item-header">
-        <span class="job-title">Manager / Kierownik operacyjny <span class="company-name">| Salony Stylu</span></span>
-        <span class="dates">06.2010 – 02.2015</span>
-      </div>
-      <ul class="responsibilities">
-        <li>Koordynacja sprawnego funkcjonowania placówek, zarządzanie pracą ponad 20-osobowego personelu oraz reprezentowanie firmy przed kontrahentami.</li>
-        <li>Obsługa kluczowych spraw klienckich, nadzór nad standardami obsługi oraz procedurami reklamacyjnymi.</li>
-        <li>Prowadzenie bieżącej sprawozdawczości, inwentaryzacji oraz nadzór nad prawidłowym obiegiem dokumentów i umów.</li>
-      </ul>
-    </div>
-  </section>
+    <section>
+      <h2>Informacje dodatkowe</h2>
+      <ul class="responsibilities"><li>Prawo jazdy kat. B.</li><li>Doświadczenie w prowadzeniu warsztatów wewnętrznych ze standardów komunikacji i obsługi klienta.</li></ul>
+      <div class="pfron-box"><strong>Informacja dla pracodawcy:</strong> Posiadam orzeczenie o niepełnosprawności w stopniu umiarkowanym. Zatrudnienie mnie uprawnia pracodawcę do ustawowej ulgi we wpłatach na PFRON (zgodnie z bieżącą strukturą zatrudnienia w firmie).</div>
+    </section>
 
-  <section class="section-block">
-    <h2>Wykształcenie</h2>
-    <div class="education-item">
-      <div>
-        <span class="education-title">Magister: Politologia (specjalizacja: Administracja Europejska)</span><br>
-        <span class="education-school">Uniwersytet Zielonogórski</span>
-      </div>
-      <span class="dates">2010 – 2012</span>
-    </div>
-    <div class="education-item" style="margin-top: 4px;">
-      <div>
-        <span class="education-title">Licencjat: Administracja (specjalizacja: Administracja Europejska)</span><br>
-        <span class="education-school">Państwowa Wyższa Szkoła Zawodowa w Gorzowie Wielkopolskim</span>
-      </div>
-      <span class="dates">2007 – 2010</span>
-    </div>
-  </section>
-
-  <section class="section-block">
-    <h2>Szkolenia i Certyfikaty</h2>
-    <div class="inline-badges">
-      <span class="badge">Zarządzanie pracą zespołu</span>
-      <span class="badge">Obsługa klienta 60+</span>
-      <span class="badge">Efektywna edukacja partnera w procesie sprzedaży</span>
-      <span class="badge">Kurs pedagogiczny dla instruktorów praktycznej nauki zawodu</span>
-      <span class="badge">Udzielanie pierwszej pomocy (certyfikat)</span>
-      <span class="badge">Program bezpieczeństwa drogowego – Defensive Driving</span>
-    </div>
-  </section>
-
-  <section class="section-block">
-    <h2>Informacje dodatkowe</h2>
-    <ul class="responsibilities" style="margin-top: 2px;">
-      <li>Prawo jazdy kat. B.</li>
-      <li>Doświadczenie w prowadzeniu warsztatów wewnętrznych ze standardów komunikacji i obsługi klienta.</li>
-    </ul>
-    <div class="pfron-box">
-      <strong>Informacja dla pracodawcy:</strong> Posiadam orzeczenie o niepełnosprawności w stopniu umiarkowanym. Zatrudnienie mnie uprawnia pracodawcę do ustawowej ulgi we wpłatach na PFRON (zgodnie z bieżącą strukturą zatrudnienia w firmie).
-    </div>
-  </section>
-
-  <div class="consent-clause">
-    Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).
-  </div>
-
+    <div class="consent-clause">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).</div>
+  </main>
 </body>
 </html>

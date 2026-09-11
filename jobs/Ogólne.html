@@ -1,213 +1,214 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Paweł Tuczyński</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manager / Process & Operations Specialist</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #e9eef3;
+      color: #17212b;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: #fff;
+      display: grid;
+      grid-template-columns: 62mm 1fr;
+    }
+    .sidebar {
+      min-height: 297mm;
+      padding: 14mm 8mm 12mm;
+      background: #153543;
+      color: #f5f8fa;
+    }
+    .sidebar h2 {
+      margin: 0 0 3mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 1px solid rgba(255,255,255,.22);
+      color: #9ed6e6;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .sidebar-section { margin-bottom: 6mm; break-inside: avoid; page-break-inside: avoid; }
+    .contact-list { display: grid; gap: 2.8mm; }
+    .contact-item { display: grid; gap: .6mm; }
+    .contact-item .label { color: #9ed6e6; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+    .contact-item a, .contact-item span:not(.label) { color: #fff; text-decoration: none; font-size: 9.3px; line-height: 1.35; }
+    .skills-list, .trainings-list { margin: 0; padding-left: 4mm; }
+    .skills-list li, .trainings-list li { margin-bottom: 1.8mm; font-size: 8.8px; line-height: 1.35; }
+    .edu-item { display: grid; gap: .6mm; margin-bottom: 3.5mm; }
+    .edu-degree { font-weight: 700; font-size: 9.2px; }
+    .edu-spec, .edu-school { color: #d0dde2; font-size: 8.4px; line-height: 1.3; }
+    .sidebar-text { margin: 0; color: #d8e3e7; font-size: 8.7px; line-height: 1.45; }
+    .pfron-card {
+      margin-top: 5mm;
+      padding: 3mm;
+      border: 1px solid rgba(158,214,230,.45);
+      background: rgba(255,255,255,.06);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .pfron-card strong { display: block; margin-bottom: 1.5mm; color: #9ed6e6; font-size: 8.8px; }
+    .pfron-card p { margin: 0; font-size: 8.2px; line-height: 1.35; }
+    .main-content { padding: 14mm 13mm 10mm; }
+    .header { padding-bottom: 5mm; border-bottom: 2px solid #1a7186; }
+    h1 { margin: 0; color: #132d37; font-size: 28px; line-height: 1.05; letter-spacing: -.025em; }
+    .subtitle { margin: 2mm 0 0; color: #1a7186; font-size: 12px; font-weight: 700; }
+    .profile-card {
+      margin: 5mm 0 6mm;
+      padding: 3.5mm 4mm;
+      border-left: 3px solid #1a7186;
+      background: #f3f7f8;
+    }
+    .profile-card p { margin: 0 0 2mm; color: #3e5058; font-size: 9.7px; line-height: 1.42; }
+    .profile-card p:last-child { margin-bottom: 0; }
+    .main-title {
+      margin: 0 0 4mm;
+      padding-bottom: 1.7mm;
+      border-bottom: 1px solid #d6e1e5;
+      color: #1a7186;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .exp-card { margin-bottom: 4.8mm; break-inside: avoid; page-break-inside: avoid; }
+    .exp-header { display: flex; justify-content: space-between; gap: 7mm; align-items: flex-start; }
+    .exp-role { margin: 0; color: #21343d; font-size: 10.2px; line-height: 1.25; }
+    .exp-company { display: block; margin-top: .6mm; color: #60737c; font-size: 8.9px; font-weight: 600; }
+    .exp-date { flex: 0 0 auto; color: #74828a; font-size: 8.7px; font-weight: 600; white-space: nowrap; }
+    .exp-summary { margin: 2mm 0; color: #4f6068; font-size: 8.9px; line-height: 1.4; }
+    .exp-bullets { margin: 1.8mm 0 0; padding-left: 4.5mm; }
+    .exp-bullets li { margin-bottom: 1.2mm; color: #34464e; font-size: 8.9px; line-height: 1.38; }
+    .rodo-footer { margin-top: 5mm; padding-top: 3mm; border-top: 1px solid #dce4e7; color: #7a858b; font-size: 6.8px; line-height: 1.3; }
+    @media (max-width: 850px) { body { background: #fff; } .page { margin: 0; } }
+    @media print { body { background: #fff; } .page { margin: 0; } }
+  </style>
 </head>
 <body>
+  <main class="page" data-job-title="Manager / Process & Operations Specialist">
+    <aside class="sidebar">
+      <section class="sidebar-section">
+        <h2>Kontakt</h2>
+        <div class="contact-list">
+          <div class="contact-item"><span class="label">Telefon</span><a href="tel:+48696778368">696-778-368</a></div>
+          <div class="contact-item"><span class="label">E-mail</span><a href="mailto:tuczynskip@wp.com">tuczynskip@wp.com</a></div>
+          <div class="contact-item"><span class="label">Lokalizacja</span><span>Zielona Góra / Gorzów Wlkp.</span></div>
+        </div>
+      </section>
 
-<div class="cv-wrapper">
-    <!-- BAR AKCJI / PRZYCISK POBIERZ -->
-    <div class="action-bar no-print">
-        <button onclick="window.print()" class="btn-download">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            Pobierz CV (PDF)
-        </button>
-    </div>
+      <section class="sidebar-section">
+        <h2>Kluczowe Umiejętności</h2>
+        <ul class="skills-list">
+          <li>MS Office (Word, Excel, PowerPoint, Outlook)</li>
+          <li>Praca w systemach CRM, TME, IHURT</li>
+          <li>Budowanie i zarządzanie zespołem</li>
+          <li>Relacje B2B, B2C oraz z deweloperami</li>
+          <li>Planowanie sprzedaży i raportowanie</li>
+          <li>Kontrola logistyki i terminowości dostaw</li>
+          <li>Prowadzenie szkoleń i warsztatów</li>
+          <li>Prawo jazdy kat. B</li>
+        </ul>
+      </section>
 
-    <div class="container">
-        <!-- LEWY PANEL (SIDEBAR) -->
-        <aside class="sidebar">
-            <!-- MIEJSCE NA ZDJĘCIE -->
-            <div class="avatar-container">
-                <img src="profile.jpg" alt="Zdjęcie profilowe" class="avatar-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/150/1e293b/93c5fd?text=Dodaj+Zdjęcie';">
-            </div>
+      <section class="sidebar-section">
+        <h2>Wykształcenie</h2>
+        <div class="edu-item"><span class="edu-degree">Magister Politologii</span><span class="edu-spec">specj. administracja europejska</span><span class="edu-school">Uniwersytet Zielonogórski | 2010–2012</span></div>
+        <div class="edu-item"><span class="edu-degree">Licencjat Administracji</span><span class="edu-spec">specj. administracja europejska</span><span class="edu-school">PWSZ w Gorzowie Wlkp. | 2007–2010</span></div>
+      </section>
 
-            <!-- KONTAKT -->
-            <section class="sidebar-section">
-                <h2>Kontakt</h2>
-                <div class="contact-list">
-                    <div class="contact-item">
-                        <span class="label">Telefon</span>
-                        <a href="tel:696778368">696-778-368</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="label">E-mail</span>
-                        <a href="mailto:tuczynskip@wp.com">tuczynskip@wp.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="label">Lokalizacja</span>
-                        <span>Zielona Góra / Gorzów Wlkp.</span>
-                    </div>
-                </div>
-            </section>
+      <section class="sidebar-section">
+        <h2>Przebyte Szkolenia</h2>
+        <ul class="trainings-list">
+          <li>Zarządzanie pracą zespołu</li>
+          <li>Obsługa klienta 60+</li>
+          <li>Defensive Driving (Bezpieczeństwo drogowe)</li>
+          <li>Efektywna edukacja detalisty w sprzedaży</li>
+          <li>Kurs pedagogiczny dla instruktorów praktycznej nauki zawodu</li>
+          <li>Kurs udzielania pierwszej pomocy (certyfikat)</li>
+          <li>Aktualna książeczka sanitarno-epidemiologiczna</li>
+        </ul>
+      </section>
 
-            <!-- KLUCZOWE UMIEJĘTNOŚCI -->
-            <section class="sidebar-section">
-                <h2>Kluczowe Umiejętności</h2>
-                <ul class="skills-list">
-                    <li>MS Office (Word, Excel, PowerPoint, Outlook)</li>
-                    <li>Praca w systemach CRM, TME, IHURT</li>
-                    <li>Budowanie i zarządzanie zespołem</li>
-                    <li>Relacje B2B, B2C oraz z deweloperami</li>
-                    <li>Planowanie sprzedaży i raportowanie</li>
-                    <li>Kontrola logistyki i terminowości dostaw</li>
-                    <li>Prowadzenie szkoleń i warsztatów</li>
-                    <li>Prawo jazdy kat. B</li>
-                </ul>
-            </section>
+      <section class="sidebar-section">
+        <h2>Zainteresowania</h2>
+        <p class="sidebar-text">Trendy w komunikacji wizualnej, marketingu BTL i mediach społecznościowych. Kreowanie wizerunku marek, projektowanie gadżetów, scenografii oraz sesji zdjęciowych.</p>
+      </section>
 
-            <!-- WYKSZTAŁCENIE -->
-            <section class="sidebar-section">
-                <h2>Wykształcenie</h2>
-                <div class="edu-item">
-                    <span class="edu-degree">Magister Politologii</span>
-                    <span class="edu-spec">specj. administracja europejska</span>
-                    <span class="edu-school">Uniwersytet Zielonogórski | 2010–2012</span>
-                </div>
-                <div class="edu-item">
-                    <span class="edu-degree">Licencjat Administracji</span>
-                    <span class="edu-spec">specj. administracja europejska</span>
-                    <span class="edu-school">PWSZ w Gorzowie Wlkp. | 2007–2010</span>
-                </div>
-            </section>
+      <div class="pfron-card"><strong>Informacja dla Pracodawcy (PFRON)</strong><p>Posiadam orzeczenie o niepełnosprawności w stopniu umiarkowanym. Zatrudnienie wiąże się z możliwością obniżenia wpłaty na PFRON nawet o ok. 1850 zł miesięcznie.</p></div>
+    </aside>
 
-            <!-- SZKOLENIA -->
-            <section class="sidebar-section">
-                <h2>Przebyte Szkolenia</h2>
-                <ul class="trainings-list">
-                    <li>Zarządzanie pracą zespołu</li>
-                    <li>Obsługa klienta 60+</li>
-                    <li>Defensive Driving (Bezpieczeństwo drogowe)</li>
-                    <li>Efektywna edukacja detalisty w sprzedaży</li>
-                    <li>Kurs pedagogiczny dla instruktorów praktycznej nauki zawodu</li>
-                    <li>Kurs udzielania pierwszej pomocy (certyfikat)</li>
-                    <li>Aktualna książeczka sanitarno-epidemiologiczna</li>
-                </ul>
-            </section>
+    <section class="main-content">
+      <header class="header">
+        <h1>Paweł Tuczyński</h1>
+        <p class="subtitle">Manager / Co-Owner / Process & Operations Specialist</p>
+      </header>
 
-            <!-- ZAINTERESOWANIA -->
-            <section class="sidebar-section">
-                <h2>Zainteresowania</h2>
-                <p class="sidebar-text">
-                    Trendy w komunikacji wizualnej, marketingu BTL i mediach społecznościowych. Kreowanie wizerunku marek, projektowanie gadżetów, scenografii oraz sesji zdjęciowych.
-                </p>
-            </section>
+      <section class="profile-card">
+        <p><strong>Jestem skutecznym organizatorem i sprawnym operatorem procesów</strong> – potrafię stworzyć coś od zera i sprawić, by działało, zarabiało i dobrze wyglądało.</p>
+        <p>Łączę kompetencje menedżerskie z doświadczeniem w obsłudze klienta, marketingu i zarządzaniu zespołami. Cenię zaufanie, lojalność i partnerskie relacje.</p>
+      </section>
 
-            <!-- PFRON -->
-            <div class="pfron-card">
-                <strong>Informacja dla Pracodawcy (PFRON)</strong>
-                <p>Posiadam orzeczenie o niepełnosprawności w stopniu umiarkowanym. Zatrudnienie wiąże się z możliwością obniżenia wpłaty na PFRON nawet o ok. 1850 zł miesięcznie.</p>
-            </div>
-        </aside>
+      <section class="experience-section">
+        <h2 class="main-title">Doświadczenie Zawodowe</h2>
 
-        <!-- PRAWY PANEL (GŁÓWNA TREŚĆ) -->
-        <main class="main-content">
-            <header class="header">
-                <h1>Paweł Tuczyński</h1>
-                <p class="subtitle">Manager / Co-Owner / Process & Operations Specialist</p>
-            </header>
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Właściciel dwóch salonów fryzjerskich</h3><span class="exp-company">Barbatus Barbershop | Fancy Studio Urody</span></div><span class="exp-date">11.2018 – 01.2025</span></div>
+          <p class="exp-summary">Samodzielne stworzenie i operacyjne zarządzanie dwoma salonami od koncepcji, projektów i nadzoru remontu po rozwój oferty i bieżącą działalność.</p>
+          <ul class="exp-bullets">
+            <li>Budowanie i koordynowanie zespołu (rekrutacja, grafiki, rozliczenia, szkolenia),</li>
+            <li>Prowadzenie nadzoru pedagogicznego nad pracownikami młodocianymi (opiekun praktyk),</li>
+            <li>Współpraca z dostawcami, negocjacje warunków handlowych i zarządzanie budżetem,</li>
+            <li>Organizowanie wydarzeń promocyjnych, sesji zdjęciowych oraz obsługa stref na eventach zewnętrznych,</li>
+            <li>Zarządzanie komunikacją marketingową i mediami społecznościowymi marki.</li>
+          </ul>
+        </div>
 
-            <!-- PROFIL ZAWODOWY -->
-            <section class="profile-card">
-                <p><strong>Jestem skutecznym organizatorem i sprawnym operatorem procesów</strong> – potrafię stworzyć coś od zera i sprawić, by działało, zarabiało i dobrze wyglądało.</p>
-                <p>Łączę kompetencje menedżerskie z doświadczeniem w obsłudze klienta, marketingu i zarządzaniu zespołami. Cenię zaufanie, lojalność i partnerskie relacje.</p>
-            </section>
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Zastępca kierownika salonu</h3><span class="exp-company">Komfort Łazienki</span></div><span class="exp-date">11.2017 – 11.2018</span></div>
+          <p class="exp-summary">Współodpowiedzialność za zarządzanie 6-osobowym zespołem sprzedażowym oraz codzienne funkcjonowanie salonu.</p>
+          <ul class="exp-bullets">
+            <li>Motywowanie zespołu, delegowanie zadań i realizacja celów sprzedażowych,</li>
+            <li>Aktywna obsługa klientów oraz budowanie relacji z deweloperami i projektantami,</li>
+            <li>Kontrola standardów obsługi/ekspozycji, raportowanie, praca na systemie iHurt i obsługa kasowa.</li>
+          </ul>
+        </div>
 
-            <!-- DOŚWIADCZENIE ZAWODOWE -->
-            <section class="experience-section">
-                <h2 class="main-title">Doświadczenie Zawodowe</h2>
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Specjalista ds. weryfikacji kontraktów / Merchandiser</h3><span class="exp-company">JTI (Japan Tobacco International)</span></div><span class="exp-date">11.2016 – 11.2017</span></div>
+          <ul class="exp-bullets">
+            <li>Utrzymywanie długofalowych relacji z detalistami oraz weryfikacja zgodności kontraktów,</li>
+            <li>Planowanie tras, nadzór nad materiałami promocyjnymi oraz praca w aplikacji TME.</li>
+          </ul>
+        </div>
 
-                <div class="exp-card">
-                    <div class="exp-header">
-                        <div>
-                            <h3 class="exp-role">Właściciel dwóch salonów fryzjerskich</h3>
-                            <span class="exp-company">Barbatus Barbershop | Fancy Studio Urody</span>
-                        </div>
-                        <span class="exp-date">11.2018 – 01.2025</span>
-                    </div>
-                    <p class="exp-summary">Samodzielne stworzenie i operacyjne zarządzanie dwoma salonami od koncepcji, projektów i nadzoru remontu po rozwój oferty i bieżącą działalność.</p>
-                    <ul class="exp-bullets">
-                        <li>Budowanie i koordynowanie zespołu (rekrutacja, grafiki, rozliczenia, szkolenia),</li>
-                        <li>Prowadzenie nadzoru pedagogicznego nad pracownikami młodocianymi (opiekun praktyk),</li>
-                        <li>Współpraca z dostawcami, negocjacje warunków handlowych i zarządzanie budżetem,</li>
-                        <li>Organizowanie wydarzeń promocyjnych, sesji zdjęciowych oraz obsługa stref na eventach zewnętrznych,</li>
-                        <li>Zarządzanie komunikacją marketingową i mediami społecznościowymi marki.</li>
-                    </ul>
-                </div>
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Pracownik działu marketingu</h3><span class="exp-company">Forte Nowoczesne Protezowanie</span></div><span class="exp-date">03.2015 – 10.2016</span></div>
+          <ul class="exp-bullets">
+            <li>Zarządzanie działaniami promocyjnymi BTL dla sieci 30 punktów sprzedaży urządzeń medycznych,</li>
+            <li>Wsparcie przy otwieraniu nowych punktów, organizacja szkoleń oraz inwentaryzacje.</li>
+          </ul>
+        </div>
 
-                <div class="exp-card">
-                    <div class="exp-header">
-                        <div>
-                            <h3 class="exp-role">Zastępca kierownika salonu</h3>
-                            <span class="exp-company">Komfort Łazienki</span>
-                        </div>
-                        <span class="exp-date">11.2017 – 11.2018</span>
-                    </div>
-                    <p class="exp-summary">Współodpowiedzialność za zarządzanie 6-osobowym zespołem sprzedażowym oraz codzienne funkcjonowanie salonu.</p>
-                    <ul class="exp-bullets">
-                        <li>Motywowanie zespołu, delegowanie zadań i realizacja celów sprzedażowych,</li>
-                        <li>Aktywna obsługa klientów oraz budowanie relacji z deweloperami i projektantami,</li>
-                        <li>Kontrola standardów obsługi/ekspozycji, raportowanie, praca na systemie iHurt i obsługa kasowa.</li>
-                    </ul>
-                </div>
+        <div class="exp-card">
+          <div class="exp-header"><div><h3 class="exp-role">Manager / Kierownik</h3><span class="exp-company">Salony Stylu</span></div><span class="exp-date">06.2010 – 02.2015</span></div>
+          <ul class="exp-bullets">
+            <li>Kierowanie ponad 20-osobowym zespołem oraz reprezentowanie firmy jako pełnomocnik,</li>
+            <li>Planowanie działań sprzedażowo-marketingowych, umowy z dostawcami, rozliczenia i organizacja eventów.</li>
+          </ul>
+        </div>
+      </section>
 
-                <div class="exp-card">
-                    <div class="exp-header">
-                        <div>
-                            <h3 class="exp-role">Specjalista ds. weryfikacji kontraktów / Merchandiser</h3>
-                            <span class="exp-company">JTI (Japan Tobacco International)</span>
-                        </div>
-                        <span class="exp-date">11.2016 – 11.2017</span>
-                    </div>
-                    <ul class="exp-bullets">
-                        <li>Utrzymywanie długofalowych relacji z detalistami oraz weryfikacja zgodności kontraktów,</li>
-                        <li>Planowanie tras, nadzór nad materiałami promocyjnymi oraz praca w aplikacji TME.</li>
-                    </ul>
-                </div>
-
-                <div class="exp-card">
-                    <div class="exp-header">
-                        <div>
-                            <h3 class="exp-role">Pracownik działu marketingu</h3>
-                            <span class="exp-company">Forte Nowoczesne Protezowanie</span>
-                        </div>
-                        <span class="exp-date">03.2015 – 10.2016</span>
-                    </div>
-                    <ul class="exp-bullets">
-                        <li>Zarządzanie działaniami promocyjnymi BTL dla sieci 30 punktów sprzedaży urządzeń medycznych,</li>
-                        <li>Wsparcie przy otwieraniu nowych punktów, organizacja szkoleń oraz inwentaryzacje.</li>
-                    </ul>
-                </div>
-
-                <div class="exp-card">
-                    <div class="exp-header">
-                        <div>
-                            <h3 class="exp-role">Manager / Kierownik</h3>
-                            <span class="exp-company">Salony Stylu</span>
-                        </div>
-                        <span class="exp-date">06.2010 – 02.2015</span>
-                    </div>
-                    <ul class="exp-bullets">
-                        <li>Kierowanie ponad 20-osobowym zespołem oraz reprezentowanie firmy jako pełnomocnik,</li>
-                        <li>Planowanie działań sprzedażowo-marketingowych, umowy z dostawcami, rozliczenia i organizacja eventów.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- KLAUZULA RODO -->
-            <footer class="rodo-footer">
-                Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).
-            </footer>
-        </main>
-    </div>
-</div>
-
+      <footer class="rodo-footer">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).</footer>
+    </section>
+  </main>
 </body>
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Care Specialist</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #eef1f4; font-family: Arial, sans-serif; color: #1c2733; }
+    .page { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 18mm; background: #fff; }
+    h1 { margin: 0; font-size: 29px; }
+    .role { margin-top: 5px; color: #164e63; font-weight: 700; }
+    .contact { margin: 18px 0 24px; font-size: 13px; color: #53606c; }
+    h2 { margin: 22px 0 9px; padding-bottom: 6px; border-bottom: 1px solid #dfe5ec; font-size: 15px; text-transform: uppercase; letter-spacing: .06em; }
+    p, li { font-size: 13px; line-height: 1.55; }
+    .job { margin-bottom: 15px; }
+    .job strong { display: block; }
+    @media print { body { background: #fff; } .page { margin: 0; } }
+  </style>
+</head>
+<body>
+  <main class="page" data-job-title="Customer Care Specialist">
+    <h1>Jan Kowalski</h1>
+    <div class="role">Customer Care Specialist</div>
+    <div class="contact">Zielona Góra · jan.kowalski@email.pl · +48 000 000 000</div>
+
+    <h2>Profil</h2>
+    <p>Przykładowe CV. Zastąp ten plik własnym CV w HTML. Nazwa zakładki zostanie pobrana z data-job-title, tagu title albo h1.</p>
+
+    <h2>Doświadczenie</h2>
+    <div class="job">
+      <strong>Specjalista ds. obsługi klienta</strong>
+      <p>Obsługa zgłoszeń, kontakt z klientem, diagnozowanie problemów i współpraca z zespołem technicznym.</p>
+    </div>
+
+    <h2>Umiejętności</h2>
+    <ul>
+      <li>Obsługa klienta i komunikacja</li>
+      <li>Help desk i praca z ticketami</li>
+      <li>Rozwiązywanie problemów</li>
+      <li>Praca zespołowa</li>
+    </ul>
+  </main>
+
+<!-- Automatycznie dodane przez build Netlify: eksport tego CV do PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+(() => {
+  const PDF_FILE = "CV_Customer_Care_Specialist.pdf";
+
+  window.addEventListener('message', async (event) => {
+    if (event.origin !== window.location.origin) return;
+    if (!event.data || event.data.type !== 'cv-download-pdf') return;
+
+    try {
+      if (typeof window.html2pdf !== 'function') {
+        throw new Error('Biblioteka PDF nie została załadowana.');
+      }
+
+      const source = document.querySelector('[data-job-title]') || document.querySelector('.page') || document.body;
+
+      await window.html2pdf()
+        .set({
+          margin: 0,
+          filename: PDF_FILE,
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: {
+            scale: 2,
+            useCORS: true,
+            logging: false,
+            backgroundColor: '#ffffff'
+          },
+          jsPDF: {
+            unit: 'mm',
+            format: 'a4',
+            orientation: 'portrait'
+          },
+          pagebreak: { mode: ['css', 'legacy'] }
+        })
+        .from(source)
+        .save();
+
+      window.parent.postMessage({ type: 'cv-pdf-done' }, window.location.origin);
+    } catch (error) {
+      console.error(error);
+      window.parent.postMessage({ type: 'cv-pdf-error', message: error.message }, window.location.origin);
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

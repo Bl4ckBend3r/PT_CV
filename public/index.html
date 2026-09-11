@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio CV dopasowanych do konkretnych stanowisk" />
+  <title>Moje CV — Portfolio stanowisk</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">CV PORTFOLIO</p>
+        <h1>CV dopasowane do stanowiska</h1>
+        <p class="subtitle">Wybierz stanowisko, zobacz CV i pobierz je w PDF.</p>
+      </div>
+
+      <div class="actions">
+        <button id="refreshBtn" class="button button-secondary" type="button" title="Odśwież listę CV">
+          <span>↻</span> Odśwież
+        </button>
+        <button id="downloadBtn" class="button button-primary" type="button" disabled>
+          <span>↓</span> <span id="downloadBtnText">Pobierz PDF</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="sidebar" aria-label="Lista CV">
+        <div class="sidebar-heading">
+          <span>Stanowiska</span>
+          <span id="jobCount" class="counter">0</span>
+        </div>
+        <nav id="tabs" class="tabs" aria-label="Dostępne wersje CV"></nav>
+      </aside>
+
+      <section class="preview-panel">
+        <div id="emptyState" class="empty-state">
+          <div class="empty-icon">CV</div>
+          <h2>Brak CV do wyświetlenia</h2>
+          <p>Dodaj pliki <strong>.html</strong> do folderu <code>jobs</code>, a pojawią się tutaj automatycznie.</p>
+        </div>
+
+        <div id="viewerWrap" class="viewer-wrap hidden">
+          <div class="viewer-toolbar">
+            <div>
+              <span class="viewer-label">Aktualnie wybrane</span>
+              <strong id="currentTitle">—</strong>
+            </div>
+            <a id="openNewTab" class="text-link" target="_blank" rel="noopener noreferrer">Otwórz w nowej karcie ↗</a>
+          </div>
+          <iframe id="cvFrame" title="Podgląd CV"></iframe>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
